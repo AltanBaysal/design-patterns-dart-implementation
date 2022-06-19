@@ -1,0 +1,1 @@
+enum AuthorityTypes{customer,stuff}
