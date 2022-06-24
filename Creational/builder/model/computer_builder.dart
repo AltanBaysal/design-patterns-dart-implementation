@@ -6,16 +6,16 @@ class ComputerBuilder{
   String modelName;
   String? cpuName;
 
-  void addRamInfo(int ramInGb){
-    this.ramInGb = ramInGb;
+  void addRamInfo(int ramMemoryInGb){
+    ramInGb = ramMemoryInGb;
   }
 
-  void addMemoryInfo(int memoryInGb){
-    this.memoryInGb = memoryInGb;
+  void addMemoryInfo(int diskMemoryInGb){
+    memoryInGb = diskMemoryInGb;
   }
 
-  void cpuNameInfo(String cpuName){
-    this.cpuName = cpuName;
+  void cpuNameInfo(String computerCpuName){
+    cpuName = computerCpuName;
   }
 
   Computer build() => Computer(ramInGb: ramInGb, memoryInGb: memoryInGb, modelName: modelName, cpuName: cpuName);
